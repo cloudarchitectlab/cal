@@ -1,3 +1,9 @@
+---
+document_type: case-study
+authority_class: descriptive
+status: draft
+---
+
 # {{PROJECT_NAME}}
 
 ## Overview
