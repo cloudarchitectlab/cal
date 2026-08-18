@@ -1,3 +1,9 @@
+---
+document_type: lessons-learned
+authority_class: descriptive
+status: draft
+---
+
 # Lessons Learned
 
 ## What Worked Well

@@ -1,3 +1,9 @@
+---
+document_type: decisions
+authority_class: decisional
+status: draft
+---
+
 # Architecture Decisions
 
 ## Purpose

@@ -1,3 +1,9 @@
+---
+document_type: deployment
+authority_class: descriptive
+status: draft
+---
+
 # Deployment
 
 ## Prerequisites

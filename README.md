@@ -36,8 +36,14 @@ my-project/
 │   └── exported/
 ├── docs/
 │   ├── notes/
-│   └── adr/
+│   ├── adr/
+│   ├── architecture.md
+│   ├── decisions.md
+│   ├── deployment.md
+│   ├── lessons-learned.md
+│   └── validation.md
 ├── screenshots/
+├── LICENSE
 ├── README.md
 └── .gitignore
 ```
@@ -45,15 +51,36 @@ my-project/
 The command also:
 
 - Initializes a Git repository
+- Sets the default branch to `main`
 - Creates an initial commit
-- Generates starter documentation
+- Generates a project README, MIT license, and starter documentation
+- Adds minimal YAML metadata to generated Markdown documents
+
+### Document metadata
+
+Generated Markdown documents begin with YAML front matter:
+
+```yaml
+---
+document_type: architecture
+authority_class: descriptive
+status: draft
+---
+```
+
+The fields provide lightweight, human-readable classification:
+
+- `document_type` identifies the document's role in a CAL case study.
+- `authority_class` identifies how the document should be interpreted, such as descriptive, decisional, or evidentiary.
+- `status` records its lifecycle state; generated documents begin as `draft`.
+
+Keep the metadata at the top of each generated document and update `status` as the document evolves. The convention is intentionally minimal: it makes scaffolded artifacts self-describing and provides a future hook for richer metadata automation without making that automation part of the current CLI.
 
 ---
 
 ## Planned Features
 
 - Interactive project creation
-- README templates
 - Architecture Decision Record generation
 - Mermaid diagram templates
 - Terraform project scaffolding
@@ -77,11 +104,11 @@ CAL CLI is intended to become the standard project generator and automation tool
 
 ---
 
-## Phase 2 – Project Templates
+## Phase 2 – Project Templates ✅
 
 Generate documentation from reusable templates.
 
-Planned features:
+Implemented:
 
 - Populate README.md from a standard template
 - Generate architecture.md
@@ -89,6 +116,7 @@ Planned features:
 - Generate decisions.md
 - Generate validation.md
 - Generate lessons-learned.md
+- Add minimal YAML metadata to generated Markdown documents
 
 ---
 

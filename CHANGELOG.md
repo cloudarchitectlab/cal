@@ -9,11 +9,13 @@ All notable changes to the Cloud Architect Lab CLI (CAL) will be documented in t
 - Began CAL v1.0 foundation work.
 - Added reusable project templates.
 - Added user workspace configuration through `~/.cal/config`.
+- Added minimal YAML front matter to scaffolded Markdown documents.
 
 ### Changed
 
 - Refactored the CLI into a standard `bin/` directory.
 - Removed the hard-coded workspace path from the CLI.
+- Updated the README to reflect the current scaffold and document metadata convention.
 
 ## v0.2.0
 
